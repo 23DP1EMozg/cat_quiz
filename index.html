@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="src/js/index.js" type="module" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#hero">
+                <img src="src/images/logo.png" width="90" height="90"/>
+            </a>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="#quiz-rules">Quiz Rules</a></li>
+                <li><a href="#cat-fact">Cat Fact</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-left">
+            <img src="src/images/cat.png" width="600" height="600"/>
+        </div>
+        <div class="hero-right">
+            <span>Learn about your <span style="color: pink;">favourite</span> animal!</span>
+        </div>
+    </section>
+    <section id="quiz-rules">
+        <div class="rules-left">
+            <span>Quiz Rules</span>
+        </div>
+        <div class="rules-right">
+            <ul>
+                <li>For each question there will be 3 answer choices and you have to choose the right one</li>
+                <li>You will be timed and your score will be shown in the leaderboards</li>
+                <li>You will be given 2 hints that you can use</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cat-fact">
+        <div class="fact-top">
+            <span>Did you know that...</span>
+        </div>
+        <div class="fact-bottom">
+            <span id="fact"></span>
+        </div>
+    </section>
+    <section id="quiz">
+        <div class="quiz-container">
+            <div class="question-counter-container">
+                <span id="timer">time: 0:00</span>
+                <span id="current-question">1/20</span>
+            </div>
+            <div class="quiz-content">
+                <div>
+                    <div class="question-container">
+                    <span id="question">loading...</span>
+                    </div>
+                    <div class="answers-container">
+                    <button value="0">loading...</button>
+                    <button value="1">loading...</button>
+                    <button value="2">loading...</button>
+                    </div>
+                    <div class="submit-container">
+                    <button id="submit-btn">Submit</button>
+                    </div>
+                    <div class="nav-buttons">
+                        <div class="nav-button" id="back"></div>
+                        <div class="nav-button" id="forward"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="leaderboard">
+        <div id="leaderboard-container">
+            <div class="leaderboard-top">
+                <span>Leaderboard</span>
+            </div>
+            <div id="leaderboard-content">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; All rights reserved
+    </footer>
+</body>
+</html>
